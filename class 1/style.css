@@ -1,0 +1,18 @@
+h1 {
+    color: blue;
+    background: red;
+    padding: 20px;
+    margin: 20px;
+    font-size: 24px;
+    font-style: italic;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    text-align: center;
+    text-shadow: 2px 2px 2px green;
+
+}
+
+h1::first-letter {
+    color: aquamarine;
+    font-size: 50px;
+}
