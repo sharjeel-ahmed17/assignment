@@ -27,6 +27,16 @@
 
 //   console.log(j);
 // }
+//  ? Qno 4:
+
+// var table = prompt("enter your table number");
+
+// var tableLength = prompt("enter length multiplication table");
+
+// for (i = 1; i <= tableLength; i++) {
+//   document.write(table + " x " + i + "=" + table * i + "<br>");
+//   //   2 x 1 = 2
+// }
 
 // ? Qno 5:
 
@@ -182,8 +192,13 @@
 // convertToTitle.slice(0, 1);
 // var title = convertToTitle[0].toUpperCase();
 // document.write(`${title + convertToTitle}`);
-
 // ? Qno 11:
+
+// var dish = prompt("enter your favorite dish");
+// var convertToUpper = dish.toUpperCase();
+// document.write(convertToUpper);
+
+// ? Qno 12:
 
 // var num = 35.36;
 
@@ -192,6 +207,35 @@
 // var rmDot = numToStr.replace(".", "");
 
 // document.write(`${rmDot.toString()}`);
+
+//  ? Qno 13:
+
+// var username = prompt("Enter your username:");
+
+// //  flags to store boolean
+// var containsSpecialSymbol = false;
+
+// for (var i = 0; i < username.length; i++) {
+//   var charCode = username.charCodeAt(i);
+// //   console.log(i);
+//   if (
+//     charCode === 33 ||
+//     charCode === 44 ||
+//     charCode === 46 ||
+//     charCode === 64
+//   ) {
+//     containsSpecialSymbol = true;
+//     break;
+//   }
+// }
+
+// if (containsSpecialSymbol) {
+
+//   alert("Please enter a valid username without special symbols [@, ., !, ,]");
+// } else {
+
+//   alert("Username is valid: " + username);
+// }
 
 // ? Qno 14:
 
@@ -244,17 +288,30 @@
 // // document.write(lastCharacter);
 // document.write(lastChar);
 
+// ? Qno 18:
+var message = "The quick brown fox jumps over the lazy dog the the the ";
+
+var message = message.toLowerCase();
+
+var words = message.split(" ");
+
+var count = 0;
+
+for (var i = 0; i < message.length; i++) {
+  if (words[i] === "the") {
+    count++;
+  }
+}
+
+document.write(count);
 //  todo ends
 
 // ! remaning questions
 
 // ** task 2
 
-// 13
 // 15
-// 18
 
 // ** task 1
 
-// 4
 // 7
