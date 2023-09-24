@@ -266,6 +266,48 @@
 //   alert("No, '" + userInput + "' is not found in the list.");
 // }
 
+// ? Qno 15:
+
+var password = prompt("enter your password");
+
+var alphabets = false;
+var number = false;
+var startWithNumber = false;
+
+if (password.length >= 6) {
+  for (var i = 0; i < password.length; i++) {
+    var charCode = password.charAt(0);
+
+    if (
+      (charCode >= 65 && charCode <= 90) ||
+      (charCode >= 97 && charCode <= 122)
+    ) {
+      alphabets = true;
+    }
+    if (charCode >= 48 && charCode <= 57) {
+      number = true;
+
+      if (i === 0) {
+        startWithNumber = true;
+      }
+    }
+  }
+}
+
+if (alphabets && number && startWithNumber) {
+  document.write("password is valid");
+} else {
+  document.write(
+    "Please enter a valid password that meets the requirements:" +
+      "<br>" +
+      "a. Contains alphabets and numbers " +
+      "<br>" +
+      "b. Does not start with a number " +
+      "<br>" +
+      "c. Is at least 6 characters long"
+  );
+}
+
 // ? Qno 16:
 
 // var university = "univercity of karachi";
