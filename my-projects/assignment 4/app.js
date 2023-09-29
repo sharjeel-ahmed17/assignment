@@ -76,17 +76,24 @@
 
 // ? Qno 7:
 
-// var cakesItems = ["cake", "apple pie", "cookie", "chips", "patties"];
+// var A = ["cake", "apple pie", "cookie", "chips", "patties"];
 
-// var order = prompt(
-//   "welcome to bari bakery. what do you want to order sir/maam "
-// );
+// var userInput = prompt("Enter an item to search:").toLowerCase();
 
-// for (i = 0; i < cakesItems.length; i++) {
-//   console.log(`${cakesItems[i]} is available at index ${i}`);
+// var found = false;
+
+// for (var i = 0; i < A.length; i++) {
+//   if (A[i].toLowerCase() === userInput) {
+//     found = true;
+//     break;
+//   }
 // }
 
-// document.write(`<h1>hello world</h1>`);
+// if (found) {
+//   document.write(`"${userInput}" is found in the list.`);
+// } else {
+//   document.write(`"${userInput}" is not found in the list.`);
+// }
 
 // ? Qno 8:
 // var arr = [24, 53, 78, 91, 12];
@@ -331,29 +338,19 @@ if (alphabets && number && startWithNumber) {
 // document.write(lastChar);
 
 // ? Qno 18:
-var message = "The quick brown fox jumps over the lazy dog the the the ";
+// var message = "The quick brown fox jumps over the lazy dog the the the ";
 
-var message = message.toLowerCase();
+// var message = message.toLowerCase();
 
-var words = message.split(" ");
+// var words = message.split(" ");
 
-var count = 0;
+// var count = 0;
 
-for (var i = 0; i < message.length; i++) {
-  if (words[i] === "the") {
-    count++;
-  }
-}
+// for (var i = 0; i < message.length; i++) {
+//   if (words[i] === "the") {
+//     count++;
+//   }
+// }
 
-document.write(count);
+// document.write(count);
 //  todo ends
-
-// ! remaning questions
-
-// ** task 2
-
-// 15
-
-// ** task 1
-
-// 7
