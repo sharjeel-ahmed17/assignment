@@ -51,6 +51,8 @@
 //     return num1 * num2;
 //   } else if (operator === "/") {
 //     return num1 / num2;
+//   } else {
+//     return "enter a valid operator";
 //   }
 // }
 
@@ -69,17 +71,14 @@
 // ? Qno 6:
 
 // function factorial(num) {
-//   // Base case: if the number is 0 or 1, factorial is 1
 //   if (num === 0 || num === 1) {
 //     return 1;
 //   } else {
-//     // Recursive case: num! = num * (num - 1)!
 //     return num * factorial(num - 1);
 //   }
 // }
 
-// // Example usage
-// const number = 5; // Change this to any non-negative integer to compute its factorial
+// const number = 5;
 // const result = factorial(number);
 // console.log(`The factorial of ${number} is: ${result}`);
 
